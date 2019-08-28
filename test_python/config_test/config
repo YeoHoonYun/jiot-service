@@ -1,0 +1,16 @@
+[PROCESS]
+base_file = /home/jiguem/dev
+python_exec = /usr/bin/python3
+processes = elastic_test/api_subscrib_ha_v2.py elastic_test/rab_subscribe.py ha_service/service_rab_subscribe.py ha_service/service_subscrib_ha.py public_data_collect.py
+
+[MAIN]
+project_root = /home/python_user/project/api_server/
+
+db_host = 127.0.0.1
+db_port = 3306
+db_user = test_user
+db_passwd = test_passwd
+db_name = test_db
+
+temp_path =/home/python_user/temp/
+image_path =/home/python_user/image/

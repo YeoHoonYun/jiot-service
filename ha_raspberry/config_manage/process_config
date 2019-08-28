@@ -1,0 +1,4 @@
+[PROCESS]
+base = /home/jiguem/dev
+command = /usr/bin/python3
+process_list = elastic_test/api_subscrib_ha_v2.py elastic_test/rab_subscribe.py ha_service/service_rab_subscribe.py ha_service/service_subscrib_ha.py public_data_collect.py automation_control_v2.py

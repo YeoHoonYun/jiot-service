@@ -1,0 +1,16 @@
+[Unit]
+Description=ha_service
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a ha_service
+ExecStop=/usr/bin/docker stop -t 2 ha_service
+
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl start jiguem_ui
+sudo systemctl enable jiguem_ui
+sudo systemctl status jiguem_ui
